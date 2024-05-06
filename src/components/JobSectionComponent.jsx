@@ -5,6 +5,8 @@ import { Typography } from "@mui/material";
 import Card from "./CardComponent";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchJobs, fetchMoreJobs } from "../redux/slice/jobsSlice";
+import Loader from "./LoaderComponent";
+import GridLines from "react-gridlines";
 
 const JobSection = () => {
   const dispatch = useDispatch();
@@ -27,10 +29,17 @@ const JobSection = () => {
 
   console.log(state);
   return (
-    <>
+  
       <Box sx={{ padding: "20px" }}>
         <Box sx={{ marginTop: "60px" }}>
           <Box sx={{ width: "100%" }}>
+          <GridLines
+      className="bg-slate-100"
+      lineColor="#fcfcfc"
+      cellWidth={25}
+      strokeWidth={2}
+      cellWidth2={20}
+    >
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <Typography sx={{ fontFamily: "Lexend, sans-serif" }}>
                 Search jobs
@@ -64,13 +73,14 @@ const JobSection = () => {
                   }}
                 >
                   <Card job={jobs} />
+                  {isLoading == true ? <Loader /> : ""}
                 </Grid>
               </Grid>
             </Grid>
+            </GridLines>
           </Box>
         </Box>
-      </Box>
-    </>
+      </Box>  
   );
 };
 
