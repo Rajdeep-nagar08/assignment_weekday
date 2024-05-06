@@ -10,8 +10,7 @@ import Grid from "@mui/material/Grid";
 import { capitalize } from "@mui/material";
 import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
 import { postedDuration } from "../utils/constants";
-
-
+import WebLoader from "./LoaderComponent" 
 
 const Card = (props) => {
   const [open, setOpen] = useState(false);
@@ -303,10 +302,7 @@ const Card = (props) => {
           </Grid>
         ))
       ) : (
-        // <WebLoader />
-        <div>
-          Wait...
-        </div>
+        <WebLoader />
       )}
     </>
   );

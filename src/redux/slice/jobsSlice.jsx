@@ -5,7 +5,6 @@ import API_URL from "../../utils/api";
 export const fetchJobs = createAsyncThunk("fetchJobs", async () => {
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
-
   const body = JSON.stringify({
     limit: 10,
     offset: 0,
