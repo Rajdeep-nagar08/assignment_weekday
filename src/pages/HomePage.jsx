@@ -1,24 +1,20 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import JobSection from "../components/JobSectionComponent";
-import GridLines from "react-gridlines";
+import Name from "../components/introComponent.jsx";
 
 
 const Home = () => {
   return (
-    <GridLines
-      className="bg-slate-100"
-      lineColor="#fcfcfc"
-      cellWidth={25}
-      strokeWidth={2}
-      cellWidth2={25}
-    >
+    
     <Box sx={{ display: "flex" }}>
+
       <Box sx={{ width: "calc(100% - 200px)", marginLeft: "100px" }}>
+    <Name />
+
         <JobSection />
       </Box>
     </Box>
-    </GridLines>
   );
 };
 
