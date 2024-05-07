@@ -9,7 +9,7 @@ const Home = () => {
     
     <Box sx={{ display: "flex" }}>
 
-      <Box sx={{ width: "calc(100% - 200px)", marginLeft: "100px" }}>
+      <Box sx={{ width: "calc(100% - 200px)", marginLeft: "150px" , marginTop: "5%"}}>
     <Name />
 
         <JobSection />
