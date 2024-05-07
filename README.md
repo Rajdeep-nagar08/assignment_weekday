@@ -1,6 +1,16 @@
 
 # Frontend Assignment - Weekday 
 
+## Logic behind Infinite loading
+
+##### 1) Fetch initial data on component mount.
+##### 2) Monitor scroll: Listen for scroll events.
+##### 3) Trigger fetch on near-bottom: When near the bottom, trigger an action to fetch more data.
+##### 4) Update limit and display: Increase the data fetch limit and display the newly fetched jobs.
+
+## Note
+Used 'Upto $X' for missing minimum salary and 'From $Y' for missing maximum salary (e.g., Upto $150K, From $100K) for better user understanding.
+
 ## Tech Stack Used
 
 **Client:** React, Redux, CSS, Material UI
@@ -40,3 +50,5 @@ npm run dev
 ## Author
 
 - [Rajdeep Nagar](https://github.com/Rajdeep-nagar08)
+
+
