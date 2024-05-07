@@ -34,7 +34,7 @@ const JobSection = () => {
         <Box sx={{ marginTop: "60px" }}>
           <Box sx={{ width: "100%" }}>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <Typography sx={{ fontFamily: "Lexend, sans-serif" }}>
+              <Typography sx={{ fontFamily: "Lexend, sans-serif",marginRight : "14%", marginBottom : "5%", fontSize: "150%"}}>
                 Search jobs
               </Typography>{" "}
             </Box>

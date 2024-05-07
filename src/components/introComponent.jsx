@@ -44,7 +44,8 @@ const Name = () => {
     };
   }, []);
 
-  const code = "// FullStack Developer";
+  const code = "FullStack Developer";
+  const exp = "Former SWE Intern @Atlassian";
 
   return (
     <div
@@ -55,11 +56,13 @@ const Name = () => {
         right: 0,
         border: "1px dotted black",
         padding: "10px",
+        marginRight: "2%",
+        marginTop: "2%"
       }}
     >
       <div>
-        <span>Info</span>
-        <span>Show</span>
+        <span>Developed By :</span>
+        {/* <span>Show</span> */}
       </div>
       <div>
         <span>const name: string = "Rajdeep Nagar";</span>
@@ -68,8 +71,15 @@ const Name = () => {
         <span>{code}</span>
       </div>
       <div>
+        <span>{exp}</span>
+      </div>
+      <div>
         <span>
-          const birthday: Date = new Date('08-09-2002'); // currently{" "}
+          const birthday: Date = new Date('08-09-2002');{" "}
+        </span>
+        </div>
+        <div>
+        <span>
           {ageInMilliseconds} years-old.
         </span>
       </div>
